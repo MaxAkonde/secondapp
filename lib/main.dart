@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:secondapp/screens/my_image.dart';
+import 'package:secondapp/form/my_checkbox.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +14,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         //useMaterial3: true,
         colorSchemeSeed: const Color.fromRGBO(188, 0, 74, 1.0),
+        brightness: Brightness.light,
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      home: const MyImage(),
+      home: const MyCheckBox(),
     );
   }
 }

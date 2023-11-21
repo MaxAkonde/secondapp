@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:secondapp/app_constants.dart';
+import 'package:secondapp/gen/assets.gen.dart';
 
 class MyImage extends StatelessWidget {
   const MyImage({Key? key}) : super(key: key);
@@ -11,7 +11,7 @@ class MyImage extends StatelessWidget {
         title: Text("My Images"),
       ),
       body: Center(
-        child: Image.asset(AppConstants.image2),
+        child: Image.asset(Assets.images.icons.chevronRight),
       ),
     );
   }

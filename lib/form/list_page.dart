@@ -16,21 +16,16 @@ class ListPage extends StatelessWidget {
         crossAxisCount: 2,
         children: List.generate(100, (index) {
           return Container(
-            height: 200,
-            width: 100,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage("http://via.placeholder.com/200"),
+              height: 200,
+              width: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage("http://via.placeholder.com/200"),
+                ),
+                color: Colors.indigo,
+                borderRadius: BorderRadius.circular(20),
               ),
-              color: Colors.indigo,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: FittedBox(
-              alignment: AlignmentDirectional.topStart,
-              fit: BoxFit.scaleDown,
-              child: Text("$index"),
-            ),
-          );
+              child: Container());
         }),
       ),
     );
